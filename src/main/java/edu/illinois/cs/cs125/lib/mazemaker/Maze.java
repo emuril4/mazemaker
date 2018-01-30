@@ -152,7 +152,9 @@ public class Maze {
      */
     static class Movement {
 
-        /** The change in the X value. */
+        /**
+         * The change in the X value.
+         */
         private Location d;
 
         /**
@@ -181,14 +183,20 @@ public class Maze {
         public void setDirection(final String newDirection) {
             this.direction = newDirection;
         }
+        /**
+        public void setDirection(final String newDirection) {
+            this.direction = newDirection;
+        }**/
 
-        /** The direction. */
+        /**
+         * The direction.
+         */
         private String direction;
 
         /**
          * Instantiates a new movement.
          *
-         * @param setD the change in location
+         * @param setD         the change in location
          * @param setDirection the set direction
          * @throws DirectionException exception if a bad direction is provided
          */
@@ -200,7 +208,6 @@ public class Maze {
             direction = setDirection;
         }
     }
-
     /** Map of possible movements. */
     static final Map<String, Movement> MOVEMENTS;
 
@@ -613,6 +620,7 @@ public class Maze {
     /**
      * Turn left.
      */
+
     @SuppressWarnings("checkstyle:missingswitchdefault")
     public void turnLeft() {
         switch (currentDirection) {
